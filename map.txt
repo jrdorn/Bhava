@@ -1,0 +1,5 @@
+Event handlers
+    navigate to new page
+    remove bookmark
+    close a tab
+
