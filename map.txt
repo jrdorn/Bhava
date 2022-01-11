@@ -7,6 +7,9 @@
     New svg icon that changes/ collects notifications, 
         bigger and more colorful, alpha transparency for soft edges
 
+    Visualization
+        https://github.com/tensorflow/tfjs/tree/master/tfjs-vis
+
 
 
 ||Architecture
@@ -62,13 +65,14 @@ https://github.com/cpury/lookie-lookie
 
 https://towardsdatascience.com/build-your-own-clustering-based-recommendation-engine-in-15-minutes-bdddd591d394
 https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1
+https://towardsdatascience.com/creating-a-spell-checker-with-tensorflow-d35b23939f60
 
 
 
 ||Notes
 
 TSF allows browser to run ML models without interacting with backend
-    great for privacy
+    transfer learning- great for privacy (explain to user in terms of service)
     not ideal for training new models
         import * as toxicity from "@tensorflow-models/toxicity";
 
@@ -88,18 +92,48 @@ Issues
 
 ||Brainstorming
 
-Looking at point on screen
++ Develop ML in browser and retrain existing models
+
++ Universal sentence encoder for NLP tasks
+
+    +Spellchecker/ autocorrect/ suggestions everywhere
+        grammatical error correction
+            recommendations based on user data
+
+    +Morphological segmentation on highlight
+
+    -textual similarity
+
+    -multimodal sentiment analysis (images, video, text)
+        emotions 
+        polarity, trends of public opinion/ marketing
+    
+
+    
+
+
++Looking at point on screen
     highlight text
     recommend e-commerce products
         user-based vs item-based
         k-means clustering
 
-Facial expression
++Browser history
+    recommend websites
+
++Data vis 
+    how much time the user spends doing X
+        types of websites
+        types of activities
+        how long they were online (over a day, week, month)
+
+
+
+-Voice to text 
+    translator
+    
+-Facial expression
     input emoji
     suggest websites/ songs/ playlists/ videos/ images
 
-Voice to text 
-    translator
 
-Browser history
-    recommend websites

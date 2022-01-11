@@ -1,3 +1,10 @@
+/**
+ * 
+ native browser interaction
+ hard logic
+ listener to trigger popup when user clicks icon
+ */
+
 let color = "red";
 
 chrome.runtime.onInstalled.addListener(() => {

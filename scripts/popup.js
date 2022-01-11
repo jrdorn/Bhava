@@ -1,3 +1,8 @@
+/**
+ * 
+ app displayed when extension is active
+ */
+
 //
 let changeColor = document.querySelector("#changeColor");
 
