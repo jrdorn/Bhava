@@ -16,6 +16,15 @@
       "128": "./img/icon128.png"
     }
   },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens hello.html"
+    }
+  },
   "icons": {
     "16": "./img/icon16.png",
     "48": "./img/icon48.png",

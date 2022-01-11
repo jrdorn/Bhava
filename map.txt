@@ -3,3 +3,5 @@ Event handlers
     remove bookmark
     close a tab
 
+Information aggregation
+Productivity tools
