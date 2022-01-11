@@ -5,16 +5,17 @@
   "manifest_version": 3,
 
   "background": {
-    "service_worker": "./service/background.js"
+    "service_worker": "scripts/background.js"
   },
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
-      "16": "./img/icon16.png",
-      "48": "./img/icon48.png",
-      "128": "./img/icon128.png"
-    }
+      "16": "img/icon16.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+    },
+    "default_title": "PLACEHOLDER TITLE",
+    "default_popup": "popup.html"
   },
   "commands": {
     "_execute_action": {
@@ -26,9 +27,9 @@
     }
   },
   "icons": {
-    "16": "./img/icon16.png",
-    "48": "./img/icon48.png",
-    "128": "./img/icon128.png"
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
   },
   "options_page": "options.html"
 }

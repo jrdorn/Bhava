@@ -1,3 +1,8 @@
+/**
+ customize the extension
+ enable/disable features
+ */
+
 let page = document.querySelector("#buttonDiv");
 let selectedClassName = "current";
 const presetButtonColors = ["blue", "orange", "green", "purple"];

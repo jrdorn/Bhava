@@ -1,7 +1,105 @@
-Event handlers
-    navigate to new page
-    remove bookmark
-    close a tab
+||General
 
-Information aggregation
-Productivity tools
+    Single purpose
+        Information aggregation
+        Productivity tool
+
+    New svg icon that changes/ collects notifications, 
+        bigger and more colorful, alpha transparency for soft edges
+
+
+
+||Architecture
+
+    Manifest
+
+
+    Background script
+
+        Event handler
+            navigate to new page
+            remove bookmark
+            close a tab
+
+        Only loaded when needed and unloaded when idle
+
+
+    Content script 
+
+
+    Options pg
+
+
+    UI elems
+
+        Browser action 
+            Users can always interact with extension
+            Icon, tooltip, badge, popup
+
+        Add pages 
+            Popups
+            tabs.create or window.open() to display HTML files
+
+        Context menu
+            Right click images/ hyperlinks/ pages
+
+        Omnibox
+            Register a keyword with Chrome's address bar
+            Each keystroke is sent to extension, option to provide suggestions in response
+
+        Keyboard shortcut
+            Ctrl+shift+F
+
+        
+
+||Inspo
+
+https://github.com/dabit3/transilator
+
+https://github.com/martzcodes/tensorflow-toxicity-chrome-extension
+
+https://github.com/cpury/lookie-lookie
+
+https://towardsdatascience.com/build-your-own-clustering-based-recommendation-engine-in-15-minutes-bdddd591d394
+https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1
+
+
+
+||Notes
+
+TSF allows browser to run ML models without interacting with backend
+    great for privacy
+    not ideal for training new models
+        import * as toxicity from "@tensorflow-models/toxicity";
+
+Client-side ML text models
+    Content-based clustering
+    Text highlighting
+    Emoji recommendation
+
+Supervised learning: use pre-labeled data set to train model
+    then classify content based on model weights
+    e.g. universal sentence encoder converts sentences to numbers using deep neural network
+
+Issues
+    unintended ML bias, lower accuracy
+
+
+
+||Brainstorming
+
+Looking at point on screen
+    highlight text
+    recommend e-commerce products
+        user-based vs item-based
+        k-means clustering
+
+Facial expression
+    input emoji
+    suggest websites/ songs/ playlists/ videos/ images
+
+Voice to text 
+    translator
+
+Browser history
+    recommend websites
