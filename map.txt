@@ -59,9 +59,9 @@
 
 ||Layout
 
-popup
+action
     access by hotkey or clicking ext button
-    click for options page 
+    right click for options page 
     click to turn on/ off
 
 background 
@@ -228,3 +228,5 @@ content scripts work in isolated worlds
     context of webpage, not extension   
     communicate by message passing
     inject programmatically in reponse to events
+
+action.onClicked not dispatched if extension shows popup on current tab

@@ -10,4 +10,10 @@
 //display extension image on page
 // <extensionDir>/images/sample.jpeg;
 
-document.body.style.backgroundColor = "orange";
+//
+//
+//
+
+// document.body.style.backgroundColor = "red";
+
+console.log("content");

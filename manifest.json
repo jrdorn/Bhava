@@ -1,11 +1,11 @@
 {
-  "name": "Test extension",
+  "name": "Bhava",
   "description": "gm",
-  "version": "0.1",
+  "version": "1.0",
   "manifest_version": 3,
 
   "background": {
-    "service_worker": "scripts/background.js"
+    "service_worker": "scripts/background.mjs"
   },
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
@@ -14,8 +14,7 @@
       "48": "img/icon48.png",
       "128": "img/icon128.png"
     },
-    "default_title": "PLACEHOLDER TITLE",
-    "default_popup": "popup.html"
+    "default_title": "Bhava"
   },
   "commands": {
     "_execute_action": {
@@ -23,7 +22,7 @@
         "default": "Ctrl+Shift+F",
         "mac": "MacCtrl+Shift+F"
       },
-      "description": "PLACEHOLDER DESCRIPTION"
+      "description": "Bhava"
     }
   },
   "icons": {
