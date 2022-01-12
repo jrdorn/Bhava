@@ -1,0 +1,22 @@
+{
+  "name": "bhava",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrdorn/Bhava.git"
+  },
+  "author": "Josh Dorn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrdorn/Bhava/issues"
+  },
+  "homepage": "https://github.com/jrdorn/Bhava#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.12.0"
+  }
+}

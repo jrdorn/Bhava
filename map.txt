@@ -104,9 +104,15 @@ https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learn
 Spellcheck
 https://towardsdatascience.com/creating-a-spell-checker-with-tensorflow-d35b23939f60
 https://towardsdatascience.com/deep-learning-autocorrect-product-and-technical-overview-1c219cee0698
+https://towardsdatascience.com/creating-a-spell-checker-with-tensorflow-d35b23939f60
+https://datascience.stackexchange.com/questions/16128/algorithms-and-techniques-for-spell-checking
 
 Autocomplete
 https://towardsdatascience.com/index-48563e4c1572
+https://datascience.stackexchange.com/questions/55521/autocomplete-with-deep-learning
+https://jaketae.github.io/study/auto-complete/
+https://medium.com/mlearning-ai/how-to-build-an-auto-complete-model-with-tensorflow-js-56c027cafc2f
+https://stackoverflow.com/questions/55980085/smart-autocomplete-with-tensorflow-js
 
 
 ||Brainstorming
@@ -125,10 +131,6 @@ Grammar checker
     grammar suggestion models
     treat incorrect grammar as "source" lang and correct grammar as "target"
 
-
-Autocorrect
-
-
 Autocomplete
     statistical language models
     conditional probability 
@@ -139,11 +141,9 @@ Autocomplete
     press space to complete
     historical probability of words following words + additional weight significance - predictive modelling based on user history
 
-
-
-
-Option for user to provide feedback 
-
+Options 
+    autocorrect for spelling and grammar 
+    user feedback
 
 +++++++++++++++++++++++++
     
@@ -188,3 +188,11 @@ Option for user to provide feedback
 ||Etc
 
 console.log for Chrome extensions appear in service worker or invisible bg page
+
+CORS policy in manifest.json to load tfjs cdn
+manifest v3 doesn't allow external scripts
+
+! ! ! use a build tool like webpack or rollup
+
+content scripts work in isolated worlds
+
