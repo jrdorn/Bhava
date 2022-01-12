@@ -11,7 +11,7 @@ let color = "purple";
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ color });
-  console.log(`Background color set to %c${color}`, `color: ${color}`);
+  console.log(`Color set to %c${color}`, `color: ${color}`);
 });
 
 //
@@ -29,19 +29,17 @@ chrome.runtime.onInstalled.addListener(() => {
 // };
 
 // try {
-//   getTabId().then((tabId) => {
+//   getTabId().then((id) => {
 //     //inject content script
 //     chrome.scripting.executeScript(
 //       {
-//         target: { tabId: tabId },
+//         target: { tabId: id },
 //         files: ["./contentScript.mjs"],
 //       },
 //       () => {
 //         // console.log("done");
 //         let e = chrome.runtime.lastError;
-//         if (e !== undefined) {
-//           console.log(tabId, _, e);
-//         }
+//         console.log(e);
 //         //
 //       }
 //     );
@@ -53,20 +51,12 @@ chrome.runtime.onInstalled.addListener(() => {
 //
 //
 //
-// Called when the user clicks on the action.
-chrome.action.onClicked.addListener(function (tab) {
-  // No tabs or host permissions needed!
-  console.log("Turning " + tab.url + " red!");
-  chrome.scripting.executeScript({
-    code: 'document.body.style.backgroundColor="red"',
-  });
-});
-
-//
-// chrome.action.onClicked.addListener((tab) => {
+// // Called when the user clicks on the action.
+// chrome.action.onClicked.addListener(function (tab) {
+//   // No tabs or host permissions needed!
+//   console.log("Turning " + tab.url + " red!");
 //   chrome.scripting.executeScript({
-//     target: { tabId: tab.id },
-//     files: ["contentScript.mjs"],
+//     code: 'document.body.style.backgroundColor="red"',
 //   });
 // });
 
