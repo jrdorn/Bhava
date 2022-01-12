@@ -5,9 +5,9 @@
  listener to trigger popup when user clicks icon
  */
 
-let color = "red";
+let color = "purple";
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ color });
-  console.log("Background color set to %cred", `color: ${color}`);
+  console.log(`Background color set to %c${color}`, `color: ${color}`);
 });

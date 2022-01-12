@@ -53,20 +53,6 @@
         Keyboard shortcut
             Ctrl+shift+F
 
-        
-
-||Inspo
-
-https://github.com/dabit3/transilator
-
-https://github.com/martzcodes/tensorflow-toxicity-chrome-extension
-
-https://github.com/cpury/lookie-lookie
-
-https://towardsdatascience.com/build-your-own-clustering-based-recommendation-engine-in-15-minutes-bdddd591d394
-https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1
-https://towardsdatascience.com/creating-a-spell-checker-with-tensorflow-d35b23939f60
-
 
 
 ||Notes
@@ -88,46 +74,106 @@ Supervised learning: use pre-labeled data set to train model
 Issues
     unintended ML bias, lower accuracy
 
+RNN
+    recurrent neural networks 
+    loops allow persistent info
+    multiple copies of same network passing message to its child
+    previous outputs used as inputs while having hidden state
+
+LSTM
+    type of RNN 
+    long short term memory
+    Long-term dependencies- "I grew up in FRANCE... I speak [FRENCH]"
+
+
+
+
+||Inspo
+
+https://github.com/dabit3/transilator
+
+https://github.com/martzcodes/tensorflow-toxicity-chrome-extension
+
+https://github.com/cpury/lookie-lookie
+
+
+Recommendation engine 
+https://towardsdatascience.com/build-your-own-clustering-based-recommendation-engine-in-15-minutes-bdddd591d394
+https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1
+
+Spellcheck
+https://towardsdatascience.com/creating-a-spell-checker-with-tensorflow-d35b23939f60
+https://towardsdatascience.com/deep-learning-autocorrect-product-and-technical-overview-1c219cee0698
+
+Autocomplete
+https://towardsdatascience.com/index-48563e4c1572
 
 
 ||Brainstorming
 
 + Develop ML in browser and retrain existing models
 
-+ Universal sentence encoder for NLP tasks
+(Universal sentence encoder for NLP tasks)
 
-    +Spellchecker/ autocorrect/ suggestions everywhere
-        grammatical error correction
-            recommendations based on user data
++++++++++++++++++++++++++
 
-    +Morphological segmentation on highlight
+Spell checker
+    seq2seq models
 
-    -textual similarity
+Grammar checker
+    machine translation 
+    grammar suggestion models
+    treat incorrect grammar as "source" lang and correct grammar as "target"
 
-    -multimodal sentiment analysis (images, video, text)
-        emotions 
-        polarity, trends of public opinion/ marketing
+
+Autocorrect
+
+
+Autocomplete
+    statistical language models
+    conditional probability 
+    n-grams
+    Markov models
+    Neural language models
+    SwiftKey
+    press space to complete
+    historical probability of words following words + additional weight significance - predictive modelling based on user history
+
+
+
+
+Option for user to provide feedback 
+
+
++++++++++++++++++++++++++
     
-
-    
-
-
-+Looking at point on screen
-    highlight text
-    recommend e-commerce products
-        user-based vs item-based
-        k-means clustering
-
-+Browser history
-    recommend websites
 
 +Data vis 
+    TFJS process
     how much time the user spends doing X
+        types of content they type
         types of websites
         types of activities
         how long they were online (over a day, week, month)
 
 
+
+-Morphological segmentation on highlight
+        
+-multimodal sentiment analysis (images, video, text)
+    emotions 
+    polarity, trends of public opinion/ marketing
+
+-textual similarity
+
+-Looking at point on screen
+    highlight text
+    recommend e-commerce products
+        user-based vs item-based
+        k-means clustering
+
+-Browser history
+    recommend websites
 
 -Voice to text 
     translator
@@ -137,3 +183,8 @@ Issues
     suggest websites/ songs/ playlists/ videos/ images
 
 
+
+
+||Etc
+
+console.log for Chrome extensions appear in service worker or invisible bg page
