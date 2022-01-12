@@ -12,6 +12,7 @@
 
 
 
+
 ||Architecture
 
     Manifest
@@ -52,6 +53,35 @@
 
         Keyboard shortcut
             Ctrl+shift+F
+
+
+
+
+||Layout
+
+popup
+    access by hotkey or clicking ext button
+    click for options page 
+    click to turn on/ off
+
+background 
+    record user input on page
+    output suggested words
+
+contentscript 
+    takes suggestion from background, style and input on page 
+    inject in response to events (typing)
+
+options 
+    whitelist websites
+    data visualization 
+    train models?
+
+
+...
+  word completion suggestion faintly as user types
+  hotkey combo to see next word suggestion, or after user finishes typing word and presses space
+
 
 
 
@@ -195,4 +225,6 @@ manifest v3 doesn't allow external scripts
 ! ! ! use a build tool like webpack or rollup
 
 content scripts work in isolated worlds
-
+    context of webpage, not extension   
+    communicate by message passing
+    inject programmatically in reponse to events

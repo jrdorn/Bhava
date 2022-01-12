@@ -6,3 +6,8 @@
   communicate with parent extension by sending messages and storing
     values in storage API
  */
+
+//display extension image on page
+// <extensionDir>/images/sample.jpeg;
+
+document.body.style.backgroundColor = "orange";
