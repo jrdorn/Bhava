@@ -19,6 +19,8 @@
 
 
     Background script
+        manage events
+        react with specified instructions
 
         Event handler
             navigate to new page
@@ -29,6 +31,9 @@
 
 
     Content script 
+        read page details
+        change page details
+        pass info to parent extension 
 
 
     Options pg
@@ -84,6 +89,13 @@
     hotkey combo to see next word suggestion, or after user finishes typing word and presses space
     context menu
 
+    !!
+
+
+    Click action to turn on/off everything
+        set timeout log 
+        ensure this works for background and contentscript 
+    !!
 
 
 ||Notes

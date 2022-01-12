@@ -28,8 +28,8 @@
 
   "content_scripts": [
     {
-      "matches": ["https://*google.com/*"],
-      "js": ["contentScript.mjs"]
+      "matches": ["<all_urls>"],
+      "js": ["scripts/contentScript.mjs"]
     }
   ],
 
